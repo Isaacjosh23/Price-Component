@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --color-bg: #f7f8ff;
+  --color-dark-blue: hsl(238, 63%, 64%);
+  --color-light-blue: hsl(237, 73%, 79%);
+  --color-gray-700: hsl(232, 13%, 33%);
+  --color-gray-650: hsl(233, 13%, 49%);
+  --color-blue-50: hsl(240, 78%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 3rem;
+  background: var(--color-bg);
+  overflow-x: hidden;
+
+  position: relative;
+}
+
+.pattern {
+  transform: translate(-50%, 50%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.pattern-1 {
+  left: 122rem;
+  top: -32rem;
+}
+
+.pattern-2 {
+  top: 21rem;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 2.6rem;
+  margin: 0 1rem;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 3.4rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  left: 0.3rem;
+  bottom: 0.3rem;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.toggle-switch input:checked + .slider,
+.toggle-switch input + .slider {
+  background: #7c73e6;
+}
+
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(2.4rem);
+}
+
+.price-card-main {
+  background: linear-gradient(
+    to right,
+    var(--color-light-blue),
+    var(--color-dark-blue)
+  );
+  color: #fff;
+}
+
+.price-card {
+  padding: 4rem 3rem;
+
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.margin-side {
+  margin: 0 -1rem;
+}
+
+.btn {
+  background: linear-gradient(
+    to right,
+    var(--color-light-blue),
+    var(--color-dark-blue)
+  );
+  padding: 1rem 0;
+}
+
+.price-card-main-btn {
+  background: #fff;
+  color: var(--color-dark-blue);
+}
