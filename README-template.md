@@ -8,7 +8,8 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
   - [The challenge](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with) 
+  - [Built with](#built-with)
+  - [What I learned](#what-I-learned)
 - [Author](#author)
 
 
@@ -25,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Price Component](https://pricecom.netlify.app/)
+- Live Site URL: [Price Component](https://pricecom.netlify.app/)
 
 ## My process
 
