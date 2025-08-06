@@ -1,8 +1,16 @@
 export default function PriceCard({ plan, index, isMonthly, onTogglePrice }) {
   return (
     <li
-      className={`flex flex-col justify-center gap-14 w-[32rem] max-sm:w-[30rem] bg-white text-center rounded-3xl ${
-        index === 1 ? "price-card-main" : ""
+      className={`flex flex-col justify-center gap-14 w-[32rem] max-sm:w-[30rem] bg-white text-center ${
+        index === 0
+          ? "rounded-tl-3xl rounded-bl-3xl rounded-tr-none rounded-br-none"
+          : ""
+      } ${
+        index === 2
+          ? "rounded-tr-3xl rounded-br-3xl rounded-tl-none rounded-bl-none"
+          : ""
+      } max-sm:rounded-3xl ${
+        index === 1 ? "price-card-main rounded-3xl" : ""
       } price-card`}
     >
       <h4

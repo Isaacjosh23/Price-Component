@@ -103,6 +103,7 @@ body {
     var(--color-dark-blue)
   );
   color: #fff;
+  height: 48rem;
 }
 
 .price-card {

@@ -47,7 +47,7 @@ import PriceCard from "./PriceCard";
 
 export default function PriceCards({ isMonthly, onTogglePrice }) {
   return (
-    <ul className="flex items-center max-sm:flex-col max-sm:justify-center gap-20">
+    <ul className="flex items-center max-sm:flex-col max-sm:justify-center max-sm:gap-20">
       {PricePlan.map((plan, i) => (
         <PriceCard
           key={i}
