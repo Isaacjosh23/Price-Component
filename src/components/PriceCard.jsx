@@ -79,7 +79,6 @@ export default function PriceCard({ plan, index, isMonthly, onTogglePrice }) {
           className={`text-white text-xl font-bold cursor-pointer rounded-2xl btn ${
             index === 1 ? "price-card-main-btn" : ""
           }`}
-          onClick={onTogglePrice}
         >
           Learn More
         </button>
